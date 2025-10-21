@@ -9,7 +9,7 @@ on:
   # Trigger at 4:00 AM UTC on weekdays (Monday-Friday)
 jobs:
   sonarqube:
-    name: SonarQube Staging
+    name: SonarQube
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
