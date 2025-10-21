@@ -7,11 +7,9 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   # Trigger at 4:00 AM UTC on weekdays (Monday-Friday)
-  schedule:
-    - cron: '0 4 * * 1-5'
 jobs:
   sonarqube:
-    name: SonarQube
+    name: SonarQube Staging
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
